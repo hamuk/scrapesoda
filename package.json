@@ -1,7 +1,7 @@
 {
   "name": "scrapesoda",
   "version": "0.0.1",
-  "description": "a configurable scraper mainly built for some getting data i need",
+  "description": "a configurable scraper mainly built for getting some data i need",
   "main": "index.js",
   "author": "Jordan Holland <holland1991@gmail.com>",
   "license": "MIT",
@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "cheerio": "^1.0.0-rc.2"
+    "chalk": "^2.4.1",
+    "cheerio": "^1.0.0-rc.2",
+    "commander": "^2.17.1"
   },
   "devDependencies": {
     "eslint": "^5.3.0",
