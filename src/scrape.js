@@ -3,7 +3,7 @@ const path = require("path");
 
 const file = require("../lib/file");
 const validateConfig = require("../lib/config").validate;
-const processSelectors = require("./processSelectors");
+const processUrl = require("./processUrl");
 
 module.exports = async (filename, options) => {
   try {
@@ -29,7 +29,7 @@ module.exports = async (filename, options) => {
 
     // actually do the scraping now
     const results = [];
-    await processSelectors(config.selectors, config.url, config.delay, results);
+    await processUrl(config.start, config.url, config.delay || 500, results);
 
     // write the results to a file
     console.log(
